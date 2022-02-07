@@ -2,14 +2,14 @@
 const slides = document.querySelectorAll('.slider'); //Слайды
 const slidesWrapper = document.querySelector('.wrapper'); //Главная обертка, через которую мы видим слайд
 const slidesField = document.querySelector('.inner'); //Блок-карусель на все слайды
-const width = window.getComputedStyle(slidesWrapper).width;// Получаем ширену блока на странице
+const width = window.getComputedStyle(slidesWrapper).width;// Получаем ширину блока на странице
 
 const next = document.querySelector('.next');//Стрелка вперед
 const prev = document.querySelector('.prev');//Стрелка назад
 
 let offset = 0; // Переменная-ориентир для  определения ширины сдвига слайдов
 
-slidesField.style.width = 100 * slides.length +'%'; // Устанавливаем ширену блака, равной ширине всех слайдов
+slidesField.style.width = 100 * slides.length +'%'; // Устанавливаем ширину блака, равной ширине всех слайдов
 slidesField.style.display = 'flex';
 slidesField.style.transition = '0.5s all';
 slidesWrapper.style.overflow = 'hidden'; // Скрываем лишние слайды
